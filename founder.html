@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Founder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   
+
+</head>
+<body style='background: url("./images/founder.jpg") no-repeat fixed; ' >
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">
+          <img src="./images/logo.png" height="100px" alt="SpaceX">
+        </label>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a class="active" href="/founder.html">Founder</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+
+        <h2>FOUNDER</h2>
+        <div class="muskimg">
+            <img src="/images/musk.jpg" alt="Elon musk">
+            <div class="container2">
+            <p>Elon Musk at TED Interview</p>
+            </div>
+        </div>    
+        <div class="para">
+            <h3>Elon Musk: Revolutionizing Space Exploration Through SpaceX</h3>
+            <p>Elon Musk, the visionary force behind SpaceX, has not only made his mark on the technological landscape but has reshaped the very future of space exploration. Musk's unwavering dedication and relentless pursuit of innovation have propelled SpaceX to the forefront of the space industry, redefining what was once thought possible. <br>
+               <br> 
+                Since its inception in 2002, SpaceX has been driven by Musk's audacious goals and unwavering commitment. Musk's early passion for space, cultivated in his youth, eventually led to the creation of SpaceX. Under his leadership, the company has achieved remarkable milestones that include the development of the groundbreaking Falcon rockets and the pioneering Dragon spacecraft. <br>
+                <br>
+                One of Musk's most ambitious endeavors is his plan to establish a human settlement on Mars. This audacious goal underscores his commitment to making interplanetary travel a reality and ensuring the long-term survival of humanity. Through his innovative spirit and ability to inspire, Musk continues to push boundaries, challenge norms, and encourage us all to dream beyond the confines of Earth. <br>
+                <br>
+                Musk's impact extends beyond his technological achievements. His leadership style, characterized by risk-taking and the ability to assemble a diverse team of experts, has transformed SpaceX into a beacon of progress and a symbol of what human ingenuity can accomplish. His legacy is one of determination, daring exploration, and the profound belief that humanity's future lies among the stars. <br>
+                <br>
+                As we navigate the cosmos and look to the skies, Elon Musk's influence on space exploration remains undeniable, and his dedication to pushing the boundaries of what's possible serves as an inspiration for generations to come. <br>
+            </p>
+            <br>
+            <h4 style="color: white;">"When something is important enough, you do it even if the odds are not in your favor." - Elon Musk</h4>    
+          <br>
+            
+        </div>
+        
+        
+        </div>
+        <script>
+            const checkBtn = document.querySelector('.checkbtn');
+            const subtitles = document.querySelector('.subtitles');
+            const title = document.querySelector(".header1");
+          
+            // Add an event listener to the checkBtn
+            checkBtn.addEventListener('click', () => {
+              if (subtitles.style.display === 'none' && title.style.display === 'none') {
+                subtitles.style.display = 'block';
+                title.style.display = 'block';
+              } else {
+                subtitles.style.display = 'none';
+                title.style.display = 'none';
+              }
+            });
+          </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</html>

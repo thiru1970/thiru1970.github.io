@@ -1,0 +1,456 @@
+.bgimage {
+  background: url('/images/spacex\ 2.jpg') no-repeat center;
+  background-size: cover;
+  height: 695px;
+  position: relative;
+
+}
+
+.header1 span {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  position: relative;
+  top: 200px;
+  left: 510px;
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  color: #cac9c9;
+  text-shadow: 6px 9px 7px rgba(0, 0, 0, 0.884), 7px 3px 0px rgba(0, 0, 0, 0.884); 
+}
+
+.hide-subtitles .header1 {
+  display: none;
+}
+
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+.subtitles span {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.884), 1px 2px rgba(0, 0, 0, 0.884);
+  font-size: 1.89em;
+  position: absolute;
+  color: #3674a7;
+  top: 450px;
+  left: 550px;
+}
+
+.hide-subtitles .subtitles{
+  display: none;
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+.footer a {
+  color: white;
+}
+
+@media (max-width: 858px) {
+  
+  .bgimage {
+      background-size: cover;
+      height: 580px;
+      position: relative;
+  }
+
+  .header1 span {
+    font-size: 1.6em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 90%; 
+    transform: translate(-0.94%);
+    text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.884), 2px 2px rgb(0, 0, 0, 0.884);
+    position: relative;
+    top: 170px;
+    left: 32px;      
+  }
+
+  .subtitles span {
+      font-size: 1.29em;
+      text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.884), 2px 2px rgb(0, 0, 0, 0.884);
+      position: relative;
+      color: #6fa8d6de;
+      top: 200px;
+      left: 30px;   
+  }
+
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 0px;
+  }
+}
+.container-me {
+  position: absolute;
+  right: 5px;
+  top: -10px;
+  margin: 20px;
+  width: auto;
+}
+
+
+.overlay {
+position: fixed; /* Use 'fixed' instead of 'absolute' to cover the whole page */
+background-color: rgba(0, 0, 0, 0.479);
+}
+
+
+.cencon {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; /* Adjust this if needed */
+}
+
+
+
+.founder{
+  background: url(/founder.jpg) no-repeat center;
+  position: relative;
+  margin-top: 1px;
+  background-size: cover;
+  height: 50%;
+  color: whitesmoke;
+  overflow: hidden;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  
+
+}
+
+
+h2{
+  text-align: center;
+  font-size: 2.7em;
+  color:#ffffffe3;
+  text-shadow: 7px 9px 7px rgb(0, 0, 0, 0.884), 7px 3px rgb(0, 0, 0, 0.884);
+  padding-left:500px;
+}
+
+.muskimg{
+  background-color: rgba(247, 245, 245, 0.384);
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.muskimg img{
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0px;
+  background: none;
+}
+
+.container2{
+  text-align: center;
+  padding: 10px 20px;
+  color: black;
+  font-size: 1.4em;
+}
+
+.para h3{
+  font-size: 2em;
+  padding: 20px 0px ;
+  text-align: center;
+  text-shadow: 4px 2px 2px rgb(0, 0, 0, 0.884), 3px 3px rgb(0, 0, 0, 0.884);
+  color: #e2dfdfe0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.para p{
+  text-align: center;
+  font-size: 1.3em;
+  margin: 1em auto;
+  max-width: 85em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 3px 2px 2px rgb(0, 0, 0, 0.884), 2px 2px rgb(0, 0, 0, 0.884);
+  color: #e2dfdf;
+}
+
+.para h4{
+  text-align: center;
+  font-size: 1.5em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ /* The actual timeline (the vertical ruler) */
+ .projects{
+  background: url(/images/projects.jpg) no-repeat center;
+  position: relative;
+  margin-top: 1px;
+  background-size: cover;
+  height: 4150px;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.header2 {
+  font-size: 2.7em;
+  color: rgb(0, 0, 0);
+  text-shadow: 3px 7px 11px whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  /* margin: 0 auto; Center horizontally */
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgba(255, 255, 255, 0.61);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.dabba {
+padding: 10px 40px;
+position: relative;
+background-color: inherit;
+width: 50%;
+}
+
+/* The circles on the timeline */
+.dabba::after {
+content: '';
+position: absolute;
+width: 25px;
+height: 25px;
+right: -17px;
+background-color: white;
+border: 4px solid #FF9F55;
+top: 15px;
+border-radius: 50%;
+z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 31px;
+  border: medium solid rgb(255, 255, 255);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(255, 255, 255);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgb(255, 255, 255);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -14px;
+}
+
+/* Make sure all circles are at the same spot */
+.left::after{
+  left: 98%;
+  }
+
+
+/* The actual content */
+.content {
+  padding: 20px 30px; 
+  background-color: rgba(255, 255, 255, 0.918);
+  position: relative;
+  border-radius: 6px;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #f2f2f2ee;
+  margin: 5px 0;
+}
+
+.gal{
+  color: whitesmoke;
+}
+
+  /* Custom CSS for carousel images */
+  .carousel-inner img {
+    width: 100%;
+    max-height: 700px; /* Adjust the maximum height as needed for PC view */
+    object-fit: cover;
+  }
+
+
+
+
+/* For common mobile view sizes */
+@media (max-width: 858px) {
+
+  h2{
+    padding-left: 65px;
+  }
+
+  .muskimg {
+    margin: 40px;
+    width: 80%;
+    height: auto;
+  
+  }
+
+  .para h3{
+    font-size: 1.4em;
+    padding: 20px 0px ;
+    text-align: center;
+    text-shadow: 6px 2px 2px rgb(0, 0, 0, 0.884), 4px 4px rgb(0, 0, 0, 0.884);
+    color: #e2dfdfe0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+
+  .para p{
+    text-align: center;
+    font-size: 1em;
+    margin: 1em auto;
+    max-width: 85em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 3px 2px 2px rgb(0, 0, 0, 0.884), 2px 2px rgb(0, 0, 0, 0.884);
+    color: #e2dfdf;
+  }
+
+  .para h4{
+    text-align: center;
+    font-size: 1.3em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+
+.carousel-inner img {
+  width: 100%;
+  max-height: 1200px; /* You can adjust the maximum height as needed */
+  object-fit: cover;
+}
+}
+
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 1800px)  {
+  /* Place the timelime to the left */
+
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .dabba {
+  width: 100%;
+  padding: 60px 18px 10px 48px;
+  }
+
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .dabba::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }  
+
+}
+

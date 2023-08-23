@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+<body>
+
+    <div class="projects">
+      <div class="overlay"></div>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">
+          <img src="./images/logo.png" height="100px" alt="SpaceX">
+        </label>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/founder.html">Founder</a></li>
+          <li><a class="active" href="/projects.html">Projects</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <br>       <br>  
+      <h1 class="header2">SOME LIST OF ACHIEVEMENTS</h1>
+      <br>
+      <br>
+    <div class="timeline">
+        <div class="dabba left">
+          <div class="content">
+            <h3>Falcon 1 flight 4(28 September 2008)</h3>
+            <p>First privately funded fully liquid-fueled rocket to reach orbit.</p>
+          </div>
+        </div>
+        <div class="dabba right">
+          <div class="content">
+            <h3>RazakSAT on Falcon 1 flight 5 (14 July 2009)</h3>
+            <p>First privately developed liquid-fueled rocket to put a commercial satellite in orbit.</p>
+          </div>
+        </div>
+        <div class="dabba left">
+          <div class="content">
+            <h3>SpaceX Dragon on SpaceX COTS Demo Flight 1 (9 December 2010)</h3>
+            <p>First private company to successfully launch, orbit, and recover a spacecraft.</p>
+          </div>
+        </div>
+        <div class="dabba right">
+          <div class="content">
+            <h3>Dragon C2+ (25 May 2012)</h3>
+            <p>First private company to send a spacecraft to the International Space Station (ISS).</p>
+          </div>
+        </div>
+        <div class="dabba left">
+          <div class="content">
+            <h3>Falcon 9 B1019 on Orbcomm OG2 M2 (22 December 2015)</h3>
+            <p>First landing of an orbital-class rocket's first stage on land.</p>
+          </div>
+        </div>
+        <div class="dabba right">
+          <div class="content">
+            <h3>Falcon 9 B1021 on SpaceX CRS-8 (8 April 2016)</h2>
+            <p>First landing of an orbital-class rocket's first stage on an ocean platform.</p>
+          </div>
+        </div>
+        <div class="dabba left">
+            <div class="content">
+              <h3>Falcon 9 B1021 on SES-10 (30 March 2017)</h2>
+              <p>First reuse, reflight and (second) landing of an orbital first stage.</p>
+            </div>
+        </div>
+        <div class="dabba right">
+            <div class="content">
+                <h3>SES-10 (30 March 2017)</h2>
+                <p>First controlled flyback and recovery of a payload fairing.</p>
+            </div>
+        </div>
+        <div class="dabba left">
+            <div class="content">
+                <h3>Dragon C106 on SpaceX CRS-11 (3 June 2017)</h2>
+                <p>First re-flight of a commercial cargo spacecraft.</p>
+            </div>
+        </div>
+        <div class="dabba right">
+            <div class="content">
+                <h3>Elon Musk's Tesla Roadster on Falcon Heavy test flight (6 February 2018)</h2>
+                <p>First private spacecraft launched into heliocentric orbit.</p>
+            </div>
+        </div>
+        <div class="dabba left">
+            <div class="content">
+                <h3>Crew Dragon Demo-1 (3 March 2019)</h2>
+                <p>First private company to autonomously dock a crew-capable spacecraft to the International Space Station (ISS).</p>
+            </div>
+        </div>
+        <div class="dabba right">
+            <div class="content">
+                <h3>Starhopper (25 July 2019)</h2>
+                <p>First flight of a full-flow staged combustion cycle engine (Raptor).</p>
+            </div>
+        </div>
+        <div class="dabba left">
+            <div class="content">
+          <h3>Starlink 2 v1.0 (11 November 2019)</h2>
+          <p>First reuse and re flight of payload fairing. The fairing was from the ArabSat-6A mission in April 2019.</p>
+        </div>
+    </div>
+    <div class="dabba right">
+        <div class="content">
+          <h3>Starlink 3 v1.0 (January 2020)</h2>
+          <p>Largest commercial satellite constellation operator in the world.[</p>
+        </div>
+  
+</div>
+
+
+<script>
+  const checkBtn = document.querySelector('.checkbtn');
+  const header2 = document.querySelector('.header2');
+  const timelineEntries = document.querySelectorAll('.dabba');
+
+ 
+  checkBtn.addEventListener('click', () => {
+    header2.style.display = header2.style.display === 'none' ? 'block' : 'none';
+    timelineEntries.forEach(entry => {
+      entry.style.display = entry.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</html>
+</body>
+</html>
